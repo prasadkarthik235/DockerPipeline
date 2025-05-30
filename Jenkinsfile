@@ -1,7 +1,9 @@
 pipeline {
   agent {
-    docker { image 'alpine' }
-    args '-u root'
+    docker { image 'alpine' 
+            args '-u root'
+           }
+    
   }
   stages {
     stage('Hello') {
