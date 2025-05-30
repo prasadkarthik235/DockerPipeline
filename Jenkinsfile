@@ -1,8 +1,7 @@
 pipeline {
   agent {
-    docker { image 'alpine' 
-            args '-u root'
-            args '--workdir /home/jenkins'
+    docker { image 'alpine'
+             args '--workdir /home/jenkins'
            }
     
   }
